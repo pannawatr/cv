@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pannawat Rodpai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    /* A4 page for printing / Save as PDF */
+    @page { size: A4; margin: 0; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  </style>
+</head>
+
+<body class="m-0 bg-stone-100 font-sans text-[10.5pt] leading-relaxed text-stone-800 antialiased print:bg-white">
+
+  <div class="fixed right-4 top-4 text-sm print:hidden">
+    <button onclick="window.print()"
+      class="cursor-pointer rounded-full bg-stone-900 px-4 py-2 font-medium text-white shadow-sm transition hover:bg-teal-700">
+      Save as PDF
+    </button>
+  </div>
+
+  <main
+    class="mx-auto my-[12mm] min-h-[297mm] w-[210mm] bg-white px-[22mm] py-[24mm] rounded-2xl shadow-xl shadow-stone-300/50 print:m-0 print:rounded-none print:min-h-0 print:w-auto print:shadow-none">
+
+    <!-- Header -->
+    <header class="pb-4">
+      <h1 class="text-[30pt] font-bold leading-none tracking-tight text-stone-900">Pannawat Rodpai</h1>
+      <p class="mt-3 text-[12pt] font-medium text-teal-700">Ph.D. Student in Computer Engineering</p>
+      <p class="text-stone-500">Chiang Mai University</p>
+      <p class="mt-5 flex gap-5 text-[10pt] font-medium">
+        <a href="https://github.com/pannawatr"
+          class="text-stone-900 underline decoration-stone-300 underline-offset-4 hover:decoration-teal-700">GitHub</a>
+        <a href="https://www.linkedin.com/in/pannawatr/"
+          class="text-stone-900 underline decoration-stone-300 underline-offset-4 hover:decoration-teal-700">LinkedIn</a>
+        <a href="mailto:pannawatr@outlook.com"
+          class="text-stone-900 underline decoration-stone-300 underline-offset-4 hover:decoration-teal-700">Mail</a>
+      </p>
+    </header>
+
+    <!-- Research Interests -->
+    <section class="grid grid-cols-[34mm_1fr] gap-x-6 py-6">
+      <h2 class="pt-0.5 text-[8.5pt] font-semibold uppercase tracking-[0.14em] text-stone-400">Research</h2>
+      <p>Urban Informatics, GTFS</p>
+    </section>
+
+    <!-- Education -->
+    <section class="grid grid-cols-[34mm_1fr] gap-x-6 py-6">
+      <h2 class="pt-0.5 text-[8.5pt] font-semibold uppercase tracking-[0.14em] text-stone-400">Education</h2>
+      <div class="space-y-5">
+        <div class="break-inside-avoid">
+          <div class="flex items-baseline justify-between gap-4">
+            <p class="font-semibold text-stone-900">Ph.D. in Computer Engineering</p>
+            <p class="shrink-0 text-[9.5pt] text-teal-700">Present</p>
+          </div>
+          <p class="text-stone-500">Chiang Mai University</p>
+        </div>
+        <div class="break-inside-avoid">
+          <div class="flex items-baseline justify-between gap-4">
+            <p class="font-semibold text-stone-900">M.Eng. in Computer Engineering</p>
+            <p class="shrink-0 text-[9.5pt] text-stone-500">2024</p>
+          </div>
+          <p class="text-stone-500">Chiang Mai University</p>
+        </div>
+        <div class="break-inside-avoid">
+          <div class="flex items-baseline justify-between gap-4">
+            <p class="font-semibold text-stone-900">B.Eng. in Computer Engineering</p>
+            <p class="shrink-0 text-[9.5pt] text-stone-500">2021</p>
+          </div>
+          <p class="text-stone-500">Chiang Mai University</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="grid grid-cols-[34mm_1fr] gap-x-6 py-7">
+      <h2 class="pt-0.5 text-[8.5pt] font-semibold uppercase tracking-[0.14em] text-stone-400">Publications</h2>
+      <div class="break-inside-avoid">
+        <p class="font-semibold leading-snug text-stone-900">
+          Evaluating the accessibility impact of integrated micromobility and transit systems: a case study of Calgary,
+          Canada
+        </p>
+        <p class="mt-1 text-stone-500">Rodpai, P., Demissie, M.G., Phithakkitnukoon, S.</p>
+        <p class="text-stone-500"><em>Public Transport</em> · 2025<span class="print:hidden"> ·
+            <a href="https://doi.org/10.1007/s12469-025-00400-2"
+              class="font-medium text-teal-700 underline decoration-teal-700/30 underline-offset-4 hover:decoration-teal-700">Link</a></span>
+        </p>
+        <div class="mt-5">
+          <p class="font-semibold leading-snug text-stone-900">
+            PyQuity: An Open-Source Framework for Multimodal Accessibility and Transportation Equity Evaluation
+          </p>
+          <p class="mt-1 text-stone-500">Rodpai, P., Demissie, M.G., Phithakkitnukoon, S.</p>
+          <p class="text-stone-500">Under review</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
